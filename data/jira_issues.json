@@ -1,0 +1,26 @@
+[
+  {
+    "issue_key": "WEB-1012",
+    "summary": "Header menu not displaying correctly on mobile",
+    "description": "The header navigation collapses but the menu items overlap on iPhone devices.",
+    "components": ["Frontend", "UI"]
+  },
+  {
+    "issue_key": "WEB-1033",
+    "summary": "User unable to submit mortgage application due to validation error",
+    "description": "Users see 'Invalid property value' when optional fields are left empty.",
+    "components": ["Backend", "Forms"]
+  },
+  {
+    "issue_key": "WEB-1150",
+    "summary": "Cart total wrong after applying promo code",
+    "description": "Promo code seems to be applied twice, causing a lower than expected total.",
+    "components": ["Cart", "Pricing"]
+  },
+  {
+    "issue_key": "WEB-1099",
+    "summary": "Cart total incorrect after updating item quantity",
+    "description": "Cart total does not recalculate correctly when item count is changed.",
+    "components": ["Cart"]
+  }
+]

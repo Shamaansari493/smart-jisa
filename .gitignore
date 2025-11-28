@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+
+# venv
+.venv/
+
+# environment
+.env
+
+# data indexes
+data/vector_index*
