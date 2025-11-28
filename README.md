@@ -82,3 +82,42 @@ smart-jisa/
 ├─ requirements.txt         # Python dependencies
 ├─ .env                     # Local environment variables (not committed)
 └─ .gitignore               # Ignore venv, .env, cache, vector index, etc.
+
+🔧 Setup
+1. Clone the project:
+git clone https://github.com/<your-username>/smart-jisa.git
+cd smart-jisa
+
+2. Create a virtual environment:
+ python -m venv .venv
+.venv\Scripts\activate
+
+3. Install dependencies:
+pip install -r requirements.txt
+
+4. Add your Gemini API key:
+Create a .env file:
+GOOGLE_API_KEY=your_api_key_here
+
+▶️ Run Smart JISA
+python main.py
+You’ll be asked for:
+Jira issue title
+Jira issue description
+
+The system returns:
+Cleaned input
+Top similar tickets
+A triage summary from the report agent
+
+📌 Example Use Case
+“Cart total wrong with discount”
+“Promo code double‑applies, final price becomes too low.”
+
+Smart JISA will detect similar historical tickets (e.g., cart calculation bugs) and recommend linking as duplicate.
+
+
+
+
+
+
